@@ -79,3 +79,25 @@ function rotate(s) {
     );
 }
 ```
+### WORK EXPERIENCE: 
+
+I have no commercial work experience as a frontend developer. Currently, I working on projects for my portfolio.
+You can see examples of my projects below
+
+[Pomodoro Timer](https://bloodsuckers-spb.github.io/advent-of-js/day1/ "Pomodoro Timer")
+
+[Password Verifier](https://bloodsuckers-spb.github.io/advent-of-js/day10/ "Password Verifier")
+
+[Calendar Viewer](https://bloodsuckers-spb.github.io/advent-of-js/day14/ "Calendar Viewer")
+
+[Star Rating](https://bloodsuckers-spb.github.io/advent-of-js/day16/ "Star Rating")
+
+### EDUCATION: 
+
+- Frontend dev of RSS school (Currently)
+- Js and React courses of itGid.info
+- Freecodecamp and learn.javascript
+
+### ENGLISH SKILLS: B1+
+
+I have a good language base. But Now I'm going to improve my English skills to fluency. You can check my current level in the video above.
