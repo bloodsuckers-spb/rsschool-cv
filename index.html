@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/dracula.min.css?_v=20210920185210"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="header__nav">
+          <ul class="site-navigation">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#about-me">About me</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#skills">Skills</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#code-example"
+                >Code example</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#video">Video</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#project-examples"
+                >Project examples</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="burger__menu">
+            <ul class="site-navigation">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#about-me">About me</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#skills">Skills</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#code-example"
+                  >Code example</a
+                >
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#video">Video</a>
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#project-examples"
+                  >Project examples</a
+                >
+              </li>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+        </nav>
+      </header>
+     
+      <main class="page">
+        <h1 class="_visually-hidden">
+          Bakov Vitaly - Junior Front-End Developer CV
+        </h1>
+
+        <aside class="sidebar">
+          <section class="sidebar__section">
+            <figure class="sidebar__figure">
+              <picture
+                ><source srcset="img/main/photo.webp" type="image/webp" />
+                <img
+                  class="sidebar__img"
+                  src="img/main/photo.png?_v=1632153130343"
+                  alt=""
+              /></picture>
+              <figcaption class="sidebar__figcaption figcaption">
+                Hi, I'm <span class="figcaption__name">Vitaly</span>
+              </figcaption>
+            </figure>
+            <h2 class="sidebar__title">Frontend developer</h2>
+          </section>
+          <section class="sidebar__section" id="skills">
+            <h3 class="sidebar__subtitle">Skills:</h3>
+            <ul class="sidebar__list sidebar-list">
+              <li class="sidebar-list__item">HTML5</li>
+              <li class="sidebar-list__item">CSS3</li>
+              <li class="sidebar-list__item">JavaScript</li>
+              <li class="sidebar-list__item">React</li>
+              <li class="sidebar-list__item">SCSS</li>
+              <li class="sidebar-list__item">BEM</li>
+              <li class="sidebar-list__item">Git</li>
+              <li class="sidebar-list__item">Webpack</li>
+              <li class="sidebar-list__item">Figma</li>
+            </ul>
+          </section>
+          <section class="sidebar__section" id="contacts">
+            <h3 class="sidebar__subtitle">Contact information:</h3>
+            <ul class="sidebar__list sidebar-list">
+              <li class="sidebar__contacts-item">Phone: +79500123422</li>
+              <li class="sidebar__contacts-item">Telegram: @bakov_vitaly</li>
+              <li class="sidebar__contacts-item">
+                Dischord: @bloodsuckers-spb#9863
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="content">
+          <div class="content__item" id="about-me">
+            <h4 class="content__title">Briefly about myself</h4>
+            <div class="content__line"></div>
+            <div class="content-box">
+              <p class="content__text">
+                Currently, I taking Frontend Dev course at the RSS
+                school. I entirely focus on web
+                development now. I'm working on the projects for my portfolio. And I looking for a job as junior frontend developer. Actually, I have a technical background. I worked as a
+                Cam-programmer/process engineer. My tasks included writting
+                control programs in Cam-systems for the subsequent processing of
+                details on CNC equipment.
+              </p>
+            </div>
+          </div>
+          
+          <div class="content__item" id="code-example">
+            <h4 class="content__title">Code example</h4>
+            <div class="content__line"></div>
+            <a href="https://www.codewars.com/users/bloodsuckers-spb" target="_blank" class="content__codewars codewars">
+              <img class="codewars__img" width="" height="" alt="codewars"
+              src="https://www.codewars.com/users/bloodsuckers-spb/badges/small">
+            </a>
+            <div class="content__code-box">
+              <pre class="_item code-box__preformatting">
+<code class="language-javascript">
+function revrot(str, sz) {
+  if (sz &lt; 1  || sz > str.length){
+    return '';
+  } 
+  return chunksCreate(str, sz);
+}
+
+function chunksCreate(str, sz) {
+  const reg = new RegExp(
+    `.{1,${sz}}`,"g"
+    );
+  const chunksArr = str.match(reg)
+  .filter(el => el.length === sz); 
+  return (
+    chunksTransform(chunksArr);
+  ) 
+}
+
+function chunksTransform(chunks) {
+  let out = '';
+
+  for (let el of chunks) {
+    const arr = Array.from(el)
+    .map(el => +el);
+    const sum = arr.reduce((acc, el)=>{
+      return acc+el;
+    });
+    if (sum % 2 === 0) {
+      out += reverse(el)
+    } 
+    else {
+      out += rotate(el)
+    }
+  }
+
+  return out;
+}
+  
+function reverse(s) {
+    return (
+        s.split('')
+        .reverse()
+        .join('')
+    );
+}
+
+function rotate(s) {
+    return (
+        s.slice(1) + s.slice(0, 1)
+    );
+}
+</code>
+                </pre>
+            </div>
+          </div> 
+
+          <div class="content__item" id="video">
+            <h4 class="content__title">Video</h4>
+            <div class="content__line"></div>
+            <div class="content-box">
+              <div class="_item-wrapper">
+                <iframe
+                  class="_item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/MGd01zlkwJk"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="content__item" id="project-examples">
+            <h4 class="content__title">Project examples</h4>
+            <div class="content__line"></div>
+            <div class="content-box">
+              <div class="content-project">
+                <h5 class="content__project-name">Pomodoro Timer</h5>
+                <div class="content__project-definition"></div>
+              </div>
+              <div class="content-project">
+                <h5 class="content__project-name">Password Verifier</h5>
+              </div>
+              <div class="content-project">
+                <h5 class="content__project-name">Calendar Viewer</h5>
+              </div>
+              <div class="content-project">
+                <h5 class="content__project-name">Star-Rating</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="content__item">
+            <h4 class="content__title title">
+              English skills:<span class="title__span">B1+</span>
+            </h4>
+            <div class="content__line"></div>
+            <div class="content-box">
+              <p class="content-text">
+                I have a good language base. But Now I'm going to improve my English skills to fluency. You can check my current level in the video above.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="content__item">
+            <h4 class="content__title">Education:</h4>
+            <div class="content__line"></div>
+            <div class="content-box">
+              <ul class="content-list">
+                <li class="content-list__item">
+                  - Frontend dev of RSS school (Currently)
+                </li>
+                <li class="content-list__item">
+                  - Js and React courses of itGid.info
+                </li>
+                <li class="content-list__item">
+                  - Freecodecamp and learn.javascript
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content__item">
+            <h4 class="content__title">Work experience</h4>
+            <div class="content__line"></div>
+            <div class="content-box">
+              <p class="content-text">
+                I have no commercial work experience as a frontend developer.
+                Currently, I working on projects for my portfolio.
+              </p>
+            </div>
+          </div>
+
+        </section>
+     
+        </main>
+
+      <footer class="footer">
+        <div class="footer__year">2021</div>
+        <div class="footer__github-link">
+          <a
+            target="_blank"
+            class="footer__link footer-link"
+            href="https://github.com/bloodsuckers-spb"
+          >
+            <picture
+              ><source srcset="img/footer/github.svg" type="image/webp" />
+              <img
+                class="footer-link__github-iconn"
+                src="img/footer/github.svg?_v=1632153130343"
+                alt="Github Icon"
+                width="26"
+                height="26"
+            /></picture>
+          </a>
+        </div>
+        <div class="footer__course-link">
+          <a
+            target="_blank"
+            class="footer__link footer-link"
+            href="https://rs.school/js/"
+          >
+            <picture
+              ><source srcset="img/footer/rs_school_js.svg" type="image/webp" />
+              <img
+                class="footer-link__rsschool-icon"
+                src="img/footer/rs_school_js.svg?_v=1632153130343"
+                alt="Rsschool Icon"
+                width="73"
+                height="26"
+            /></picture>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/app.min.js?_v=20210920185210"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
