@@ -87,10 +87,11 @@
                 <img
                   class="sidebar__img"
                   src="img/main/photo.png?_v=1632153130343"
+                  width="auto" height="auto"
                   alt=""
               /></picture>
               <figcaption class="sidebar__figcaption figcaption">
-                Hi, I'm <span class="figcaption__name">Vitaly</span>
+                Hi, I'm <h2 class="figcaption__name">Vitaly</h2>
               </figcaption>
             </figure>
             <h2 class="sidebar__title">Frontend developer</h2>
@@ -141,7 +142,7 @@
             <h4 class="content__title">Code example</h4>
             <div class="content__line"></div>
             <a href="https://www.codewars.com/users/bloodsuckers-spb" target="_blank" class="content__codewars codewars">
-              <img class="codewars__img" width="" height="" alt="codewars"
+              <img class="codewars__img" width="auto" height="auto" alt="codewars"
               src="https://www.codewars.com/users/bloodsuckers-spb/badges/small">
             </a>
             <div class="content__code-box">
@@ -225,19 +226,41 @@ function rotate(s) {
             <h4 class="content__title">Project examples</h4>
             <div class="content__line"></div>
             <div class="content-box">
-              <div class="content-project">
-                <h5 class="content__project-name">Pomodoro Timer</h5>
-                <div class="content__project-definition"></div>
-              </div>
-              <div class="content-project">
-                <h5 class="content__project-name">Password Verifier</h5>
-              </div>
-              <div class="content-project">
-                <h5 class="content__project-name">Calendar Viewer</h5>
-              </div>
-              <div class="content-project">
-                <h5 class="content__project-name">Star-Rating</h5>
-              </div>
+              
+                <div class="content-project">
+                  <h5 class="content__project-name">Pomodoro Timer</h5>
+                  <div class="content__project-definition">The project was implemented with vanilla js. When timer is paused or the time is up, the settings button is able to click and you can change minutes and seconds of the timer. The full implementation can be viewed on github.
+                  </div>
+                  <a class="content__project-link"
+                    href="https://bloodsuckers-spb.github.io/advent-of-js/day1/"
+                    target="_blank"
+                    ><img class="content__project-img" src='https://github.com/bloodsuckers-spb/advent-of-js/raw/main/images/day1-screen.png' width="auto" height="auto"   alt="Pomodoro Timer"></a>
+                  
+                </div>
+                <div class="content-project">
+                  <h5 class="content__project-name">E-Commerce Component</h5>
+                  <div class="content__project-definition">The project was implemented with vanilla js through OOP style. The instance of the class is initialized on click. After that the events(increase and decrease) become binded to instance. The full implementation can be viewed on github.</div>
+                  <a
+                    href="https://bloodsuckers-spb.github.io/advent-of-js/day2/"
+                    target="_blank"
+                    class="content__project-link"
+                    ><img class="content__project-img" src='https://github.com/bloodsuckers-spb/advent-of-js/raw/main/images/day2-screen.png' 
+                    width="auto" height="auto" alt="E-Commerce Component"></a>
+                
+                </div>
+                <div class="content-project">
+                  <h5 class="content__project-name">Form Validation</h5>
+                  <div class="content__project-definition">The project was implemented with vanilla js. The task was to validate the form on the 'blur' event. Email validation is passed though regular expression. The full implementation can be viewed on github.</div>
+                  <a
+                    href="https://bloodsuckers-spb.github.io/advent-of-js/day19/"
+                    target="_blank"
+                    class="content__project-link"
+                    ><img class="content__project-img" src='https://github.com/bloodsuckers-spb/advent-of-js/raw/main/images/day19-screen.png' width="auto" height="auto" alt="Form Validation"></a>
+                  
+                </div>
+          
+             
+        
             </div>
           </div>
 
